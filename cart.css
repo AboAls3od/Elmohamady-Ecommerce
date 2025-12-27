@@ -1,0 +1,144 @@
+
+#cart {
+  max-width: 900px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+
+#cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#cart-table thead {
+  background: #f5f5f5;
+}
+
+#cart-table th,
+#cart-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#cart-table th {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#cart-table img {
+  width: 60px;
+  height: auto;
+  border-radius: 4px;
+}
+#cart-table td button {
+  padding: 4px 10px;
+  border: none;
+  background: rgb(108, 9, 9);
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  color: white;
+}
+
+#cart-table td button:hover {
+  background: #151312;
+  color: white;
+}
+
+
+#cart-summary {
+  max-width: 900px;
+  margin: 20px auto;
+  text-align: right;
+}
+
+#checkout-btn {
+  background:  #254d4d;
+  color: #fff;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+#checkout-btn:hover {
+  background:  #082b2b
+}
+
+@media (max-width: 768px) {
+
+  #cart {
+    padding: 15px;
+  }
+
+  #cart-table,
+  #cart-table thead,
+  #cart-table tbody,
+  #cart-table th,
+  #cart-table td,
+  #cart-table tr {
+    display: block;
+    width: 100%;
+  }
+
+
+  #cart-table thead {
+    display: none;
+  }
+
+
+  #cart-table tbody tr {
+    background: #fff;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  #cart-table td {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    text-align: left;
+  }
+
+
+  #cart-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #333;
+  }
+
+
+  #cart-table td:first-child {
+    justify-content: center;
+  }
+
+  #cart-table img {
+    width: 80px;
+  }
+
+
+  #cart-table td button {
+    padding: 6px 14px;
+    font-size: 14px;
+  }
+
+  #cart-summary {
+    text-align: center;
+  }
+
+  #checkout-btn {
+    width: 100%;
+  }
+}
